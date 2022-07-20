@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #b7b0b0;
+}
+.container{
+    width: 1250px ;
+    margin: 0 auto;
+    background-color: white;
+  
+}
+/* hrader section start */
+header{
+display: flex;
+border-radius: 20px;
+background-color: black;
+margin-bottom: 50px;
+
+
+}
+.benner{
+    color: white;
+     margin: 30px; 
+   
+}
+.benner-button{
+   background-color:red;
+   color: white;
+   padding: 5px 10px;
+
+}
+.boll{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+   
+    transition: transfrom 1s ease-in-out;
+    animation: sliding 1s ease-in-out 0.5s  10;
+    animation-play-state:running;
+}
+@keyframes sliding{
+    0%{
+left: 0;
+top: 0;
+    }
+    100%{
+        left:120px;
+top:20px;
+    }
+
+
+  
+   
+}
+
+
+    
+
+/* hrader section end */
+/* main section start */
+.link{
+   display: grid;
+    background-color: black;
+    width: 20%;
+    height:180px;
+     padding-top: 20px; 
+}
+.link a{
+    text-decoration: none;
+    display: grid; 
+   color: black;
+    font-weight: 600;
+    border: solid black 2px;
+   border-radius: 10px;
+   background-color: white;
+    text-align: center; 
+   margin: 10px;
+   height:30px 
+   
+
+}
+.main-button{
+    border-radius: 5px;
+    border: solid gray 1px;
+    padding: 5px;
+}
+
+.main-match{
+    width: 100%;
+    display: flex;
+    
+}
+.link .main-blog{
+    background-color: red;
+}
+.match{
+padding-left: 10px;
+
+}
+
+.matchs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    width: 80%;
+
+}
+.main-pra{
+    padding-left: 10px;
+}
+
+span{
+    font-size: 15px;
+}
+.main-icon{
+    display: flex;
+    color: gray;
+    padding: 10px 0;
+     gap: 10px; 
+    align-items: center;
+    
+  
+}  
+.main-sec{
+    visibility: hidden;
+}
+/* main section start */
+/* footer section start */
+footer{
+    background-color:black;
+   
+    
+}
+.footer-goal{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    
+
+}
+.footer-link{
+text-align: center;
+}
+.footer-link a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.copy{
+    color: white;
+    text-align: center;
+}
+.fa-brands{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    }
+.icon-bar{
+    text-align: center;
+}
+/* footer section start */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+    .container{
+        width: 575px ;
+       margin: 0 auto;
+    }
+header{
+        display: grid;
+       }
+.benner{
+       text-align: center;
+    }
+.link{
+    display: grid;
+    align-content: center;
+}
+.main-match{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+.matchs{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.benner-img{
+    text-align: center;
+}
+.link{
+   width: 100%;
+   align-content: center;
+  background-color: white;
+  
+}
+.link a{
+    text-decoration: none;
+   font-weight: 600;
+    background-color: white;
+   text-align: center;
+   border: #d7d7d7 solid 1px;
+
+
+}
+
+
+.footer-link a{
+   display: grid;
+}
+.main-icon{
+
+  justify-content: center;
+} 
+@keyframes sliding{
+    0%{
+left: 0;
+top: 0;
+    }
+    20%{
+        left:200px;
+top:50px;
+    }
+    100%{
+        top: 70%;
+        right: 400px;
+    }
+
+
+  
+   
+}
+
+}
+
+@media only screen and (min-width: 576px) and (max-width:775px){
+    .container{
+        max-width: 775px ;
+        margin: 0 auto;
+       
+    }
+    .main-match{
+        display: grid;
+        width: 100%;
+    }
+    
+
+    .link{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    padding: 0;
+    height: 50px;
+    
+    }
+    .link a{
+      display: grid; 
+      border: solid rgb(196, 196, 196) 1px;
+      padding: 0 50px;
+      text-align: center;
+      height: 20px;
+      margin: 5px;
+      border-radius: 0;
+      font-weight: 400;
+   }
+   
+    .matchs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        margin-left:20px ;
+    }
+    .main-sec{
+        visibility: visible;
+        text-align: center;
+    }
+    .main-sec a{
+        text-decoration: none;
+        color:white;
+        border: solid red 1px;
+        background-color: red;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+
+}
